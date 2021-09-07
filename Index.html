@@ -4,128 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Css Way 1 Style Tag
-    <style>
-        body {
-            color: brown;
-        }
-    </style> -->
-    <link href="Styles.css" rel="stylesheet">
+    <title>Home | Adarsh Balika</title>
+    <link href="/Styles.css" rel="stylesheet">
 </head>
 <body>
-    2nd way of implementing Style tag
-    <!-- <h1 style="color: crimson;">Anurag Component Library</h1> -->
-    <!-- <h1 id = "libheader">Anurag Component Library</h1> -->
-    <h1>Anurag Cmponenet library</h1>
-    <p1 > I am attending nneog.camp and i want to make a library which will make all my projects look good and consistent</p1>
-    <h2>@typography</h2>
-    <h1>This is the Biggest heading</h1>
-    <h2>This is the second biggest heading</h2>
-    <p>This Paragraph will have <strong>Bold</strong> text</p>
-    <p>Let me show you the normal text, this is free flowing and will wrap at the end like a paragraph.</p>
-    <small>This is the smallest heading</small>
-    <hr>
-    <h2>@container</h2>
 
-    <h3>Fluid Container</h3>
-    <div class="Container" >This is the fluid container and it will go till the end</div>
-
-    <h3>Centre Container</h3>
-    <div class="Container">This is the Centre container and it will go till the end</div>
-
-    <h2>@links</h2>
-    <a class="link link-primary" href="/">PrimaryLink</a>
-    <a class="link link-secondary"  href="/">SecondaryLink</a>
-    <hr>
-    @Lists
-    <div>
-        Here is my Lists
-        <div>1.Item one</div>
-        <div>1.Item Two</div>
-        <div>1.Item Three</div>
-        <div> But this is a weard way to show list</div>
-    </div>
-    <hr>
-    <h2>@List</h2>
-    <h3>unordered List</h3>
-    <p>This list will not have bullet</p>
-    <ul  class="list-non-bullet">
-        <li>Item one</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
-
-    <hr>
-    <h3> unordered inline list</h3>
-    <ul>
-        <li class="list-item-inline">Inline Item One</li>
-        <li class="list-item-inline">Inline Item Two</li>
-        <li class="list-item-inline">Inline Item Three</li>
-    </ul>
-
-    <hr>
-    <h3>reverse orderd list</h3>
-    <ol>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>bread</li>
-    </ol>
-
-    <hr>
+    <!-- navigation Bar -->
     <h2>@nav</h2>
     <nav class="navigation container">
         <div
-        class="nav-brand">iambrand</div>
-        <ul class="list-non-bullet non-pills"> 
+        class="nav-brand">I AM A Software Developer</div>
+        <ul class="list-non-bullet nav-pills"> 
             <li class="list-item-inline">
-                <a class="link" href="/">home</a>
+                <a class="link link-active" href="/">home</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">products</a>
+                <a class="link" href="/projects.html">projects</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">about</a>
+                <a class="link" href="/Blogs.html">Blogs</a>
             </li>
         </ul>
     </nav>
 
+    <!-- Header Part -->
     <hr>
-    <h2>Header</h2>
-
-    <header>
-        <img src="Images/Main.svg"width="300" height="300"/>
-        <h1>heading inside here</h1>
+    <h2>@Header</h2>
+    <header class="hero">
+        <img class="hero-img"  src="/Images/Main.svg"/>
+        <h1 class="hero-heading">Adarsh Balika The<span class="heading-inverted"> Web Developer </span></h1>
     </header>
 
-    <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/feature2_pic1.svg" width="300" height="300"/>
-    <h2>This is a copied image from Roc8</h2>
-
-    ,hr>
-    <h2>@Section</h2>
-    <section>
-        <h3>White Section</h3>
-        <p>This will hae white section</p>
-    </section>
-
-    
-    <section>
-        <h3> off White Section</h3>
-        <p>This will have off white section</p>
-    </section>
-
+    <!-- Section -->
     <hr>
-    <footer>Some small heading inside footer
-    <ul>
-        <li>SocialOne</li>
-        <li>SocialTwo</li>
-        <li>SocialThree</li>
+    <!-- For Technologies -->
+    <section class="section ow">
+        <div class="container container-centre">
+        <h1> Technologies</h1>
+        <p>I am a RPA Developer having knowledge on Blue prism and Ui path, currenty i am learning webdesigning from NeoG camp</p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section">
+        <div class="container container-centre">
+        <h1> Projects</h1>
+        <p>i would like to showcase my work,and thus you can see my projetcs hosted online</p>
+        <a class="link link-primary" href="/">ProjectLinks</a>
+        </div>
+        
+    </section>
+
+    <!-- Blogs -->
+    <section class="section ow">
+        <div class="container container-centre">
+        <h1> Blogs</h1>
+        <p>Below is the list of Blogs that i have worked on</p>
+        <a class="link link-secondary"  href="/">Blog 1</a>
+        <a class="link link-secondary"  href="/">Blog 2</a>
+        <a class="link link-secondary"  href="/">Blog 3</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <hr>
+    <footer class="footer">
+        <div class="footer-header">
+            If you wnat to Socialise with me below are the ways.
+        </div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline ">
+                <a class="link" href="https://github.com/Anurag021?tab=repositories">Github</a>
+            </li>
+            <li class="list-item-inline ">
+                <a class="link" href="https://www.linkedin.com/in/anurag-rawat-9b948298/">linkedin</a>
+            </li>
+            <li class="list-item-inline ">
+                <a class="link" href="/">Instagram</a>
+            </li>
     </ul>
 </footer>
-
-<!-- Commentinggg -->
-
-
 
 </body>
 </html>
